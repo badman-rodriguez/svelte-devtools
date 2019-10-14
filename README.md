@@ -1,3 +1,13 @@
+# Heads Up Notes:
+
+- Use NVM to install, to test locally. It needs `node": ">=11.14.0"`
+- This repo also use: `inkscape` to generate the icon.'
+  - `"build:icon": "for size in 16 24 48 96 128; do if [ ! -e dest/icon-$size.png -o src/svelte-logo.svg -nt dest/icon-$size.png ]; then inkscape src/svelte-logo.svg -G -o dest/icon-$size.png -w $size; fi; done"`
+- The author also created a new tool called the svelte profiler here: 
+  - `git+https://github.com/RedHatter/svelte-listener.git`
+  - It looks pretty rough for now, so expect this update frequently.
+
+
 # Svelte DevTools
 [![Mozilla Add-on](https://img.shields.io/amo/users/svelte-devtools?color=red&label=Firefox)](https://addons.mozilla.org/en-US/firefox/addon/svelte-devtools/) [![Chrome Web Store](https://img.shields.io/chrome-web-store/users/ckolcbmkjpjmangdbmnkpjigpkddpogn?color=blue&label=Chrome)](https://chrome.google.com/webstore/detail/svelte-devtools/ckolcbmkjpjmangdbmnkpjigpkddpogn)
 
